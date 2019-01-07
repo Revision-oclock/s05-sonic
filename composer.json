@@ -1,0 +1,14 @@
+{
+    "name": "mint/s05-parcours",
+    "description": "\u001b",
+    "authors": [
+        {
+            "name": "kimahro77",
+            "email": "kilik.972@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.4",
+        "altorouter/altorouter": "^1.2"
+    }
+}
