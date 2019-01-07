@@ -1,14 +1,15 @@
 <?php
 
-dump($viewVars['character']);
 $character = $viewVars['character'];
 ?>
-<table>
+<div class="d-flex flex-column">
 <?php
-    echo '<tr>';
-    echo '<td> <a href="/character/'.$character->getId().'">'. $character->getName() . '</a></td>'; // On va créer une nouvelle route, dont un url va ressembler à : /character/23 (23 est un id)
-    echo '<td><img src="'.$_SERVER['BASE_URI'] . '/images/' . $character->getPicture() . '"></td>';
-    echo '<td>' . $character->getDescription() . '</td>';
-    echo '</tr>';
+    echo '<div>';
+    echo '<img src="'.$_SERVER['BASE_URI'] . '/images/' . $character->getPicture() . '">';
+    echo '<div class="name" href="/character/'.$character->getId().'">'. $character->getName() . '</div>'; // On va créer une nouvelle route, dont un url va ressembler à : /character/23 (23 est un id)
+    echo '<span class="col-12 .col-md-8">' . $character->getDescription() . '</span> ';
+    echo '</div>';
 ?>
-</table>
+</div>
+
+<span class="badge badge-pill badge-primary"><a class="deco" href="<?= getAbsoluteURL(''); ?>"">Accueil</a></span>

@@ -1,5 +1,5 @@
 td {
-    color:red;
+    color:purple;
 }
 
 img {
@@ -19,6 +19,19 @@ img {
     width: 50%;
 }
 
-h1 {
+#title {
     color: blue;
+    text-align: center;
+    margin: 5% auto 
+}
+
+.name{
+    color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline  
+}
+
+a{
+    color: brown;
 }
