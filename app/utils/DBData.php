@@ -49,7 +49,6 @@ class DBData
 
         $characterData = $characterDataQueryStatement->fetchAll();
 
-        dump($characterData);
 
         return $characterData;
     }

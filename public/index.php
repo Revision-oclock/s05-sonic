@@ -1,6 +1,8 @@
 <?php 
 require __DIR__ . '/../vendor/autoload.php';
 
+include __DIR__ . '/../app/helper/path.php';
+
 include __DIR__ . '/../app/controllers/CoreController.php';
 include __DIR__ . '/../app/controllers/ErrorController.php';
 include __DIR__ . '/../app/controllers/MainController.php';
